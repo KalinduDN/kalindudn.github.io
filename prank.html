@@ -2,6 +2,14 @@
 <html>
 <head>
 	<title>You Have Been Prank</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#name").html("Kalindu DN");
+
+});
+
+</script>
 	<style type="text/css">
 		h1{
 			color: pink;
@@ -13,7 +21,7 @@
 			font-size:40px;
 			text-align: center;
 		}
-		#text{
+		.text{
 			text-align: center;	
 			color: red;
 			width: 300px;
@@ -23,7 +31,7 @@
 			margin-left:50px;
 
 		}
-		#text1{
+		.text1{
 			text-align: center;
 			
 			color: red;
@@ -59,7 +67,7 @@
 	<tr>
 		<td rowspan="2"><img src="fooled.png"></td>
 		<td><h1>
-	You Have Been Prank by your friend <br><i>Name</i>!!!
+	You Have Been Prank by your friend <i><p id="name"></p></i>
 
 </h1></td>
 
@@ -90,7 +98,7 @@
 		</h2>
 		</td id="col">
 		<td>
-			<input type="text" name="email" id="text">
+			<input type="text" name="email" class="text" id="first">
 		</td>
 
 	</tr>
@@ -102,7 +110,7 @@
 			
 		</td id="col">
 		<td>
-			<input type="text" name="name" id="text">
+			<input type="text" name="name" class="text" id="second">
 		</td>
 
 	</tr>
@@ -114,7 +122,7 @@
 			
 		</td>
 		<td>
-			<input type="text" name="pass" id="text">
+			<input type="text" name="pass" class="text">
 		</td>
 
 	</tr>
@@ -126,7 +134,7 @@
 			
 		</td>
 		<td>
-			<input type="submit" name="submit" id="text1" value="Generate Link">
+			<input type="submit" name="submit" class="text1" value="Generate Link">
 		</td>
 
 	</tr>
@@ -144,7 +152,7 @@
 			</h2>
 		</td>
 		<td>
-			<input type="text" name="name" id="text" style="width: 800px;">
+			<input type="text" name="name" class="text" style="width: 800px;">
 		</td>
 	</tr>
 
