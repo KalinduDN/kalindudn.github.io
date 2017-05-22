@@ -2,8 +2,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>abc</title>
+	<title></title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var url = document.URL;
+	var idno = url.split("?");
+	$("#urlname").val(idno[1]);
+
+});
+
+</script>
+<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=317552&format=300x250&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/317552" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/300x250.png" border="0" /></a></noscript>
+<script type="text/javascript" src="http://ylx-4.com/layer.php?section=General&pub=317552&ga=g&show=2&fp"></script>
 	<style type="text/css">
+		.uu{
+			color: none;
+			font-size:1px;
+			background: transparent;
+			border: none;
+
+		}
 		h1{
 			font-size:100px;
 			color:red;
@@ -59,7 +79,7 @@
 </head>
 <body background="background.png">
 <center>
-<form action="indexcoding.php" method="get">
+<form action="prank.php" method="get">
 
 <table>
 	<tr>
@@ -111,6 +131,8 @@
 
 	</tr>
 </table>
+
+<input type="text" id="urlname" name="urlname" class="uu" />
 </form>
 </center>
 

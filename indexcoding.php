@@ -1,6 +1,4 @@
-<?php
-	if(isset($_GET['submit'])){
-		header('Location: prank.html');
+<?php 
+	mail('kalindudn@gmail.com','Sample Contact','dadad');
 
-	}
-?>
+ ?>
