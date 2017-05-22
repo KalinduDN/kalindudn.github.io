@@ -1,148 +1,26 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	var url = document.URL;
-	var idno = url.split("?");
-	$("#urlname").val(idno[1]);
-
-});
-
-</script>
-
-	<style type="text/css">
-		.uu{
-			color: none;
-			font-size:1px;
-			background: transparent;
-			border: none;
-
-		}
-		h1{
-			font-size:100px;
-			color:red;
-		}
-		#d{
-			vertical-align: center;
-			
-		}
-		#text{
-			text-align: center;
-			
-			color: red;
-			width: 500px;
-			height: 80px;
-			font-size:50px;
-			background-color: pink;
-			
-			margin-left:50px;
-		}
-		#text1{
-			text-align: center;
-			
-			color: red;
-			width: 500px;
-			height: 160px;
-			font-size:100px;
-			background-color: #000;
-			background: transparent;
-			margin-left:50px;
-			border: none;
-		}
-		#sub{
-			
-			text-align: center;
-			color: red;
-			width: 430px;
-			height: 80px;
-			font-size:50px;
-			background-color: pink;
-			
-			margin-left:100px;
-		}
-		#subv{			
-			text-align: center;
-			color: red;
-			width: 430px;
-			height: 80px;
-			font-size:50px;
-			background-color: pink;			
-			margin-right:100px;
-		}		
-	</style>
+	<title>Which Politician Are You?</title>
 </head>
-<body background="background.png">
-<center>
-<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=317552&format=728x90&ga=g"></script>
-<noscript><a href="https://yllix.com/publishers/317552" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" border="0" /></a></noscript>
-<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=317552&format=728x90&ga=a"></script>
-<noscript><a href="https://yllix.com/publishers/317552" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" border="0" /></a></noscript>
-<form action="prank.php" method="get">
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '295403577574521',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
 
-<table>
-	<tr>
-	<td colspan="2">
-		<div id="d" >
-			<h1>LOVE CALCULATOR</h1>
-		</div>
-	</tr>
-
-
-	</td>
-	
-	<tr>
-		<td>
-			<div align="left" >
-			<input type="text" name="firstName"  id="text">
-			<br>
-			<br>
-		</div>
-
-		</td>
-		<td rowspan="2">
-			<div align="left">
-			<label id="text1">100%</label>
-			</div>
-
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<div align="left">
-			<input type="text" name="secondName"  id="text">
-			</div>
-			<br/>
-
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/>
-			<div align="left">
-			<a href="prank.php">
-				<input type="submit" name="submit"  id="sub" value="submit"/>				
-			</a>
-			
-			</div>
-
-		</td>
-
-	</tr>
-</table>
-
-<input type="text" id="urlname" name="urlname" class="uu" />
-</form>
-
-<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=317552&format=728x90&ga=g"></script>
-<noscript><a href="https://yllix.com/publishers/317552" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" border="0" /></a></noscript>
-<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=317552&format=300x250&ga=g"></script>
-<noscript><a href="https://yllix.com/publishers/317552" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/300x250.png" border="0" /></a></noscript>
-<script type="text/javascript" src="http://ylx-4.com/layer.php?section=General&pub=317552&ga=g&show=2&fp"></script>
-</center>
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
-
 </html>
