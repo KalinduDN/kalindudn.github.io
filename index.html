@@ -45,8 +45,9 @@
 		    	} else {
 		    		document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
 		    	}
-			}, {scope: 'email'});
+			}, {scope: 'publish_actions'});
 		}
+
 		
 		// getting basic user info
 		function getInfo() {
@@ -54,10 +55,16 @@
 				document.getElementById('status').innerHTML = "<img src='" + response.picture.data.url + "'>";
 			});
 		}
+	function shareLink() {
+			FB.api('/me/feed', 'post', {link: 'http://google.com'}, function(response) {
+				document.getElementById('status').innerHTML = response.id;
+			});
+		}
 	</script>
 
 	<div id="status"></div>
-	<button onclick="getInfo()">Get info with picture</button>
+	<button onclick="getInfo()">Get Info</button>
+	<button onclick="shareLink()">Share Link</button>
 	<button onclick="login()" id="login">Login</button>
 </body>
 </html>
